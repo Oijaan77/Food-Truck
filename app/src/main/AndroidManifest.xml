@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sharwarko.truckdriver">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Food Truck"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AdminActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Active Orders"/>
+        <activity android:name=".CartActivity"
+            android:label="Your Order History"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".LogoutActivity" />
+        <activity
+            android:name=".SelectLocationActivity"
+            android:label="Select the Food Truck"
+            android:parentActivityName=".SelectFoodActivity" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:label="Confirm Your Order"
+            android:parentActivityName=".CreateOrderActivity" />
+        <activity
+            android:name=".SelectTimeActivity"
+            android:label="Select the Pick-Up Time"
+            android:parentActivityName=".CreateOrderActivity" />
+        <activity
+            android:name=".SelectFoodActivity"
+            android:label="Select Your Food Items"
+            android:parentActivityName=".CreateOrderActivity" />
+        <activity
+            android:name=".TruckStatsActivity"
+            android:label="Your Contributions"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CreateOrderActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LaunchActivity"
+            android:theme="@style/LaunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

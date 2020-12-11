@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+
+    <CheckBox
+        android:id="@+id/chkBox"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="88"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="12"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="TVInfo"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvID"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/tvPickUp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tvTime"
+            android:gravity="center"
+            android:text="TVpickUp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+
+    <TextView
+        android:gravity="center"
+        android:textAlignment="center"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/tvOrder"
+        android:layout_weight="78"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="22">
+
+        <TextView
+            android:gravity="center"
+            android:text="FoodTruck"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/tvFoodTruck"/>
+
+    </LinearLayout>
+
+</LinearLayout>
